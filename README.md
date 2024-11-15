@@ -14,7 +14,7 @@ poi1 = Location("State Capitol", 30.4383, -84.2807)
 poi2 = Location("Union", 30.4445, -84.2970)
 
 # Calculating distance between them
-distance = poi1.calculate_distance(poi2)
+distance = poi1.calculate_distance(poi2, unit = "km")
 
 distance
 

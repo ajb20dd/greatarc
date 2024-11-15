@@ -23,6 +23,10 @@ class Location:
         
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
         
+        valid_units = ["km", "kilometers", "miles", "mi"]
+        if unit.lower() not in valid_units:
+            raise ValueError(f"Invalid unit '{unit}'. Please use one of the following: {', '.join(valid_units)}.")
+                
         if unit.lower() in ["miles", "mi"]:
             radius = radius_mi
         else:
