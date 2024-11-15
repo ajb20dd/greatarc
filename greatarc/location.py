@@ -32,9 +32,4 @@ class Location:
         
         distance = radius * c
         
-        if unit == "miles":
-            return distance + "mi"
-        if unit == "mi":
-            return distance + "mi"
-        else:
-            return distance + "km"
+        return f"{distance:.2f} {unit}"
