@@ -13,8 +13,8 @@ class Location:
         import math
         # Haversine formula to calculate distance between two points on the Earth
         
-        radius_km = 6371  # Earth radius in kilometers
-        radius_mi = 3963  # Earth of radius in miles
+        radius_km = 6371                    # Earth radius in kilometers
+        radius_mi = (radius_km * 0.621371)  # Earth of radius in miles
         
         dlat = math.radians(other_location.latitude - self.latitude)
         dlon = math.radians(other_location.longitude - self.longitude)
