@@ -23,13 +23,11 @@ class Location:
         
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
         
-        if unit == "miles":
+        if unit.lower() in ["miles", "mi"]:
             radius = radius_mi
-        elif unit == "mi":
-            radius == radius_mi
         else:
             radius = radius_km
         
         distance = radius * c
         
-        return f"{distance:.2f} {unit}"
+        return f"{distance:.2f} {unit.lower()}"
