@@ -7,9 +7,9 @@ setup(
     description="A sample Python package",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    author="Ziqi Li",
-    author_email="liziqi1992@gmail.com",
-    url="https://github.com/Ziqi-Li/greatarc",
+    author="Alexander Bedine",
+    author_email="ajb20dd@fsu.edu",
+    url="https://github.com/ajb20dd/greatarc",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
